@@ -202,3 +202,28 @@ body {
     font-size: 14px;
     color: #aaa;
 }
+/* הגנה כללית שתמונות לא ייצאו מגבולות המסך */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* התאמות מיוחדות למסכי טלפון */
+@media (max-width: 768px) {
+  /* הקטנת רווחים ושוליים ענקיים */
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  /* הקטנת גודל גופנים שמתאימים למחשב */
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  p { font-size: 1rem; }
+
+  /* סידור כרטיסיות הוידאו/תרגילים טור אחד מתחת לשני */
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
