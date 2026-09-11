@@ -1,0 +1,204 @@
+/* הגדרות בסיס */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfbf7;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #4a5d4e;
+    margin-bottom: 30px;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+/* תפריט עליון - דביק בראש הדף */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a5d4e;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555555;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar nav a:hover {
+    color: #8a9a86;
+}
+
+/* אזור ראשי - Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 50px;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 44px;
+    color: #4a5d4e;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* כפתורים */
+.btn {
+    display: inline-block;
+    background-color: #8a9a86;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6c7c68;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1eb854;
+}
+
+/* סקציית אודות */
+.about-section {
+    background-color: #f4f1ea;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #444;
+    text-align: right;
+}
+
+/* סקציית המלצות (Cards) */
+.cards-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    text-align: right;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.author {
+    font-weight: bold;
+    color: #4a5d4e;
+}
+
+/* סקציית סרטונים */
+.videos-section {
+    background-color: #f4f1ea;
+}
+
+.video-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.video-placeholder {
+    height: 180px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+/* פוטר */
+.footer {
+    background-color: #3b483e;
+    color: white;
+    padding: 50px 0 20px 0;
+    text-align: center;
+}
+
+.footer h2 {
+    color: #ffffff;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaa;
+}
