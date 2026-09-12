@@ -227,3 +227,34 @@ img {
     gap: 15px;
   }
 }
+/* עיצוב אזור רשתות חברתיות */
+.social-links {
+  margin: 25px 0;
+}
+
+.social-links h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin: 0 8px;
+  background-color: #8fa08e; /* צבע הירוק-זית של האתר */
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* אפקט מעבר עכבר (Hover) */
+.social-links a:hover {
+  background-color: #6e7e6d;
+  transform: translateY(-3px);
+}
