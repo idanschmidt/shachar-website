@@ -30,35 +30,54 @@ body {
     margin-bottom: 40px;
 }
 
-/* תפריט עליון - דביק בראש הדף */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+/* צמצום גובה ה-Header וסדר כללי */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  padding: 10px 0; /* צמצום הרווח העליון והתחתון */
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse; /* שומר על הלוגו מימין והתפריט משמאל */
+}
+
+/* עיצוב הלוגו והאייקון */
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4a5d4e;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.navbar nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #555555;
-    font-weight: 500;
-    transition: color 0.2s;
+.logo-icon {
+  color: #8fa08e; /* צבע ירוק-זית עדין לאייקון היוגה */
+  font-size: 1.2rem;
 }
 
-.navbar nav a:hover {
-    color: #8a9a86;
+/* עיצוב הקישורים בשורה אחת נקייה */
+.nav-links {
+  display: flex;
+  list-style: none; /* מסיר את הנקודות של הרשימה */
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* מרווח בין הקישורים */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #8fa08e;
 }
 
 /* אזור ראשי - Hero */
